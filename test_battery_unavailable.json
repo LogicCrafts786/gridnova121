@@ -1,0 +1,834 @@
+{
+    "mode":  "DEMO / SIMULATION MODE",
+    "electrical_model":  "Simplified Demo Power Balance",
+    "timestamp_hour":  5.1,
+    "active_scenario":  "NORMAL",
+    "is_emergency":  true,
+    "emergency_label":  "BATTERY_FAILURE",
+    "telemetry":  {
+                      "timestamp_hour":  5.1,
+                      "solar_irradiance_w_m2":  0.0,
+                      "wind_speed_m_s":  8.33,
+                      "temperature_c":  15.2,
+                      "solar_potential_mw":  0.0,
+                      "wind_potential_mw":  25.27,
+                      "base_demand_mw":  129.73,
+                      "active_scenario":  "NORMAL"
+                  },
+    "forecast":  {
+                     "horizon_hours":  24,
+                     "forecast_mode":  "Forecast Mode: DEMO (Physics-Informed ML Regression with Residual Error Bounds)",
+                     "confidence_score":  0.91,
+                     "mape_pct":  4.8,
+                     "steps":  [
+                                   {
+                                       "hour":  5,
+                                       "demand_expected_mw":  128.6,
+                                       "demand_lower_mw":  114.3,
+                                       "demand_upper_mw":  142.9,
+                                       "solar_expected_mw":  0.0,
+                                       "solar_lower_mw":  0.0,
+                                       "solar_upper_mw":  0.0,
+                                       "wind_expected_mw":  28.3,
+                                       "wind_lower_mw":  16.1,
+                                       "wind_upper_mw":  40.6
+                                   },
+                                   {
+                                       "hour":  6,
+                                       "demand_expected_mw":  138.8,
+                                       "demand_lower_mw":  123.1,
+                                       "demand_upper_mw":  154.5,
+                                       "solar_expected_mw":  10.3,
+                                       "solar_lower_mw":  3.6,
+                                       "solar_upper_mw":  17.0,
+                                       "wind_expected_mw":  40.0,
+                                       "wind_lower_mw":  24.6,
+                                       "wind_upper_mw":  55.4
+                                   },
+                                   {
+                                       "hour":  7,
+                                       "demand_expected_mw":  149.9,
+                                       "demand_lower_mw":  132.6,
+                                       "demand_upper_mw":  167.1,
+                                       "solar_expected_mw":  26.0,
+                                       "solar_lower_mw":  16.7,
+                                       "solar_upper_mw":  35.3,
+                                       "wind_expected_mw":  20.5,
+                                       "wind_lower_mw":  9.2,
+                                       "wind_upper_mw":  31.8
+                                   },
+                                   {
+                                       "hour":  8,
+                                       "demand_expected_mw":  157.9,
+                                       "demand_lower_mw":  139.4,
+                                       "demand_upper_mw":  176.5,
+                                       "solar_expected_mw":  45.4,
+                                       "solar_lower_mw":  32.8,
+                                       "solar_upper_mw":  58.1,
+                                       "wind_expected_mw":  14.0,
+                                       "wind_lower_mw":  3.9,
+                                       "wind_upper_mw":  24.1
+                                   },
+                                   {
+                                       "hour":  9,
+                                       "demand_expected_mw":  161.9,
+                                       "demand_lower_mw":  142.4,
+                                       "demand_upper_mw":  181.3,
+                                       "solar_expected_mw":  65.7,
+                                       "solar_lower_mw":  49.4,
+                                       "solar_upper_mw":  82.0,
+                                       "wind_expected_mw":  22.6,
+                                       "wind_lower_mw":  10.0,
+                                       "wind_upper_mw":  35.3
+                                   },
+                                   {
+                                       "hour":  10,
+                                       "demand_expected_mw":  162.9,
+                                       "demand_lower_mw":  142.7,
+                                       "demand_upper_mw":  183.0,
+                                       "solar_expected_mw":  84.2,
+                                       "solar_lower_mw":  64.4,
+                                       "solar_upper_mw":  100.0,
+                                       "wind_expected_mw":  0.8,
+                                       "wind_lower_mw":  0.0,
+                                       "wind_upper_mw":  8.1
+                                   },
+                                   {
+                                       "hour":  11,
+                                       "demand_expected_mw":  159.2,
+                                       "demand_lower_mw":  138.9,
+                                       "demand_upper_mw":  179.6,
+                                       "solar_expected_mw":  96.5,
+                                       "solar_lower_mw":  74.0,
+                                       "solar_upper_mw":  100.0,
+                                       "wind_expected_mw":  8.1,
+                                       "wind_lower_mw":  0.0,
+                                       "wind_upper_mw":  17.5
+                                   },
+                                   {
+                                       "hour":  12,
+                                       "demand_expected_mw":  153.6,
+                                       "demand_lower_mw":  133.3,
+                                       "demand_upper_mw":  174.0,
+                                       "solar_expected_mw":  100.9,
+                                       "solar_lower_mw":  77.0,
+                                       "solar_upper_mw":  100.0,
+                                       "wind_expected_mw":  10.9,
+                                       "wind_lower_mw":  0.4,
+                                       "wind_upper_mw":  21.4
+                                   },
+                                   {
+                                       "hour":  13,
+                                       "demand_expected_mw":  148.1,
+                                       "demand_lower_mw":  127.8,
+                                       "demand_upper_mw":  168.4,
+                                       "solar_expected_mw":  96.8,
+                                       "solar_lower_mw":  73.0,
+                                       "solar_upper_mw":  100.0,
+                                       "wind_expected_mw":  0.0,
+                                       "wind_lower_mw":  0.0,
+                                       "wind_upper_mw":  7.7
+                                   },
+                                   {
+                                       "hour":  14,
+                                       "demand_expected_mw":  142.5,
+                                       "demand_lower_mw":  122.3,
+                                       "demand_upper_mw":  162.7,
+                                       "solar_expected_mw":  83.9,
+                                       "solar_lower_mw":  62.0,
+                                       "solar_upper_mw":  100.0,
+                                       "wind_expected_mw":  10.8,
+                                       "wind_lower_mw":  0.0,
+                                       "wind_upper_mw":  21.8
+                                   },
+                                   {
+                                       "hour":  15,
+                                       "demand_expected_mw":  140.0,
+                                       "demand_lower_mw":  119.6,
+                                       "demand_upper_mw":  160.4,
+                                       "solar_expected_mw":  65.9,
+                                       "solar_lower_mw":  46.8,
+                                       "solar_upper_mw":  85.0,
+                                       "wind_expected_mw":  4.8,
+                                       "wind_lower_mw":  0.0,
+                                       "wind_upper_mw":  14.3
+                                   },
+                                   {
+                                       "hour":  16,
+                                       "demand_expected_mw":  140.0,
+                                       "demand_lower_mw":  119.1,
+                                       "demand_upper_mw":  160.8,
+                                       "solar_expected_mw":  45.5,
+                                       "solar_lower_mw":  29.9,
+                                       "solar_upper_mw":  61.1,
+                                       "wind_expected_mw":  0.0,
+                                       "wind_lower_mw":  0.0,
+                                       "wind_upper_mw":  8.2
+                                   },
+                                   {
+                                       "hour":  17,
+                                       "demand_expected_mw":  140.9,
+                                       "demand_lower_mw":  119.5,
+                                       "demand_upper_mw":  162.2,
+                                       "solar_expected_mw":  25.7,
+                                       "solar_lower_mw":  13.7,
+                                       "solar_upper_mw":  37.7,
+                                       "wind_expected_mw":  17.2,
+                                       "wind_lower_mw":  3.5,
+                                       "wind_upper_mw":  30.9
+                                   },
+                                   {
+                                       "hour":  18,
+                                       "demand_expected_mw":  143.8,
+                                       "demand_lower_mw":  121.6,
+                                       "demand_upper_mw":  165.9,
+                                       "solar_expected_mw":  10.5,
+                                       "solar_lower_mw":  1.3,
+                                       "solar_upper_mw":  19.8,
+                                       "wind_expected_mw":  5.3,
+                                       "wind_lower_mw":  0.0,
+                                       "wind_upper_mw":  15.5
+                                   },
+                                   {
+                                       "hour":  19,
+                                       "demand_expected_mw":  145.1,
+                                       "demand_lower_mw":  122.3,
+                                       "demand_upper_mw":  167.8,
+                                       "solar_expected_mw":  0.0,
+                                       "solar_lower_mw":  0.0,
+                                       "solar_upper_mw":  0.0,
+                                       "wind_expected_mw":  12.0,
+                                       "wind_lower_mw":  0.0,
+                                       "wind_upper_mw":  24.6
+                                   },
+                                   {
+                                       "hour":  20,
+                                       "demand_expected_mw":  144.0,
+                                       "demand_lower_mw":  121.0,
+                                       "demand_upper_mw":  167.1,
+                                       "solar_expected_mw":  0.0,
+                                       "solar_lower_mw":  0.0,
+                                       "solar_upper_mw":  0.0,
+                                       "wind_expected_mw":  28.9,
+                                       "wind_lower_mw":  10.6,
+                                       "wind_upper_mw":  47.2
+                                   },
+                                   {
+                                       "hour":  21,
+                                       "demand_expected_mw":  141.3,
+                                       "demand_lower_mw":  118.2,
+                                       "demand_upper_mw":  164.4,
+                                       "solar_expected_mw":  0.0,
+                                       "solar_lower_mw":  0.0,
+                                       "solar_upper_mw":  0.0,
+                                       "wind_expected_mw":  17.0,
+                                       "wind_lower_mw":  2.3,
+                                       "wind_upper_mw":  31.7
+                                   },
+                                   {
+                                       "hour":  22,
+                                       "demand_expected_mw":  134.7,
+                                       "demand_lower_mw":  112.0,
+                                       "demand_upper_mw":  157.4,
+                                       "solar_expected_mw":  0.0,
+                                       "solar_lower_mw":  0.0,
+                                       "solar_upper_mw":  0.0,
+                                       "wind_expected_mw":  35.6,
+                                       "wind_lower_mw":  14.4,
+                                       "wind_upper_mw":  56.9
+                                   },
+                                   {
+                                       "hour":  23,
+                                       "demand_expected_mw":  127.0,
+                                       "demand_lower_mw":  104.8,
+                                       "demand_upper_mw":  149.1,
+                                       "solar_expected_mw":  0.0,
+                                       "solar_lower_mw":  0.0,
+                                       "solar_upper_mw":  0.0,
+                                       "wind_expected_mw":  43.2,
+                                       "wind_lower_mw":  19.0,
+                                       "wind_upper_mw":  67.4
+                                   },
+                                   {
+                                       "hour":  0,
+                                       "demand_expected_mw":  119.3,
+                                       "demand_lower_mw":  97.8,
+                                       "demand_upper_mw":  140.8,
+                                       "solar_expected_mw":  0.0,
+                                       "solar_lower_mw":  0.0,
+                                       "solar_upper_mw":  0.0,
+                                       "wind_expected_mw":  43.3,
+                                       "wind_lower_mw":  18.6,
+                                       "wind_upper_mw":  67.9
+                                   },
+                                   {
+                                       "hour":  1,
+                                       "demand_expected_mw":  113.2,
+                                       "demand_lower_mw":  92.1,
+                                       "demand_upper_mw":  134.2,
+                                       "solar_expected_mw":  0.0,
+                                       "solar_lower_mw":  0.0,
+                                       "solar_upper_mw":  0.0,
+                                       "wind_expected_mw":  53.7,
+                                       "wind_lower_mw":  25.0,
+                                       "wind_upper_mw":  80.0
+                                   },
+                                   {
+                                       "hour":  2,
+                                       "demand_expected_mw":  111.3,
+                                       "demand_lower_mw":  90.2,
+                                       "demand_upper_mw":  132.4,
+                                       "solar_expected_mw":  0.0,
+                                       "solar_lower_mw":  0.0,
+                                       "solar_upper_mw":  0.0,
+                                       "wind_expected_mw":  37.4,
+                                       "wind_lower_mw":  14.1,
+                                       "wind_upper_mw":  60.7
+                                   },
+                                   {
+                                       "hour":  3,
+                                       "demand_expected_mw":  112.5,
+                                       "demand_lower_mw":  90.9,
+                                       "demand_upper_mw":  134.0,
+                                       "solar_expected_mw":  0.0,
+                                       "solar_lower_mw":  0.0,
+                                       "solar_upper_mw":  0.0,
+                                       "wind_expected_mw":  51.5,
+                                       "wind_lower_mw":  22.7,
+                                       "wind_upper_mw":  80.0
+                                   },
+                                   {
+                                       "hour":  4,
+                                       "demand_expected_mw":  118.7,
+                                       "demand_lower_mw":  96.0,
+                                       "demand_upper_mw":  141.5,
+                                       "solar_expected_mw":  0.0,
+                                       "solar_lower_mw":  0.0,
+                                       "solar_upper_mw":  0.0,
+                                       "wind_expected_mw":  44.3,
+                                       "wind_lower_mw":  17.8,
+                                       "wind_upper_mw":  70.9
+                                   }
+                               ]
+                 },
+    "risk":  {
+                 "overall_level":  "HIGH",
+                 "overall_score_pct":  33.3,
+                 "items":  [
+                               {
+                                   "category":  "Power Shortage",
+                                   "level":  "LOW",
+                                   "score_pct":  15.0,
+                                   "reason":  "Adequate generation headroom (115.5 MW) available to meet demand reliably.",
+                                   "threshold_info":  "High if margin \u003c 12 MW, Med if margin \u003c 35 MW"
+                               },
+                               {
+                                   "category":  "Renewable Curtailment",
+                                   "level":  "LOW",
+                                   "score_pct":  10.0,
+                                   "reason":  "Grid, battery, and local load can absorb 100% of forecast renewable production.",
+                                   "threshold_info":  "High if potential surplus \u003e 20 MW"
+                               },
+                               {
+                                   "category":  "Reserve Shortage",
+                                   "level":  "MEDIUM",
+                                   "score_pct":  55.0,
+                                   "reason":  "Reserve margin is moderate (25.5 MW vs 25.0 MW required).",
+                                   "threshold_info":  "High if upward reserve \u003c 25 MW"
+                               },
+                               {
+                                   "category":  "Battery Shortage",
+                                   "level":  "HIGH",
+                                   "score_pct":  95.0,
+                                   "reason":  "BESS is forced OFFLINE / unavailable; zero dynamic flexibility or frequency response available from energy storage.",
+                                   "threshold_info":  "High if forced offline or SOC \u003c= 25%"
+                               },
+                               {
+                                   "category":  "Generator Availability",
+                                   "level":  "LOW",
+                                   "score_pct":  10.0,
+                                   "reason":  "All conventional thermal units (G1, G2, G3) report 100% mechanical availability.",
+                                   "threshold_info":  "High if \u003e= 2 units offline, Med if 1 unit offline"
+                               },
+                               {
+                                   "category":  "Grid Dependency",
+                                   "level":  "LOW",
+                                   "score_pct":  15.0,
+                                   "reason":  "Low external grid dependency (0.0 MW import, max 60 MW).",
+                                   "threshold_info":  "High if import \u003e 85% of limit or interconnect offline"
+                               }
+                           ],
+                 "is_emergency":  true,
+                 "disclaimer":  "Risk thresholds are DEMO assumptions for decision-support."
+             },
+    "resource_availability":  [
+                                  {
+                                      "resource_id":  "SOLAR-1",
+                                      "resource_name":  "Solar PV Farm (Bifacial Single-Axis)",
+                                      "resource_type":  "Renewable Solar PV",
+                                      "max_capacity_mw":  100.0,
+                                      "available_capacity_mw":  0.0,
+                                      "current_output_mw":  0.0,
+                                      "status":  "LIMITED",
+                                      "reason":  "Low irradiance (0 W/mÂ²) due to cloud cover or nighttime."
+                                  },
+                                  {
+                                      "resource_id":  "WIND-1",
+                                      "resource_name":  "Wind Turbine Array (Direct-Drive DFIG)",
+                                      "resource_type":  "Renewable Wind Farm",
+                                      "max_capacity_mw":  80.0,
+                                      "available_capacity_mw":  25.3,
+                                      "current_output_mw":  25.3,
+                                      "status":  "AVAILABLE",
+                                      "reason":  "Strong wind resource (8.3 m/s), turbines at normal aerodynamic pitch."
+                                  },
+                                  {
+                                      "resource_id":  "G1",
+                                      "resource_name":  "G1 (Base-load CCGT)",
+                                      "resource_type":  "Thermal Generator",
+                                      "max_capacity_mw":  80.0,
+                                      "available_capacity_mw":  80.0,
+                                      "current_output_mw":  0.0,
+                                      "status":  "AVAILABLE",
+                                      "reason":  "Nominal mechanical readiness; operational range [20 - 80 MW]."
+                                  },
+                                  {
+                                      "resource_id":  "G2",
+                                      "resource_name":  "G2 (Intermediate Gas)",
+                                      "resource_type":  "Thermal Generator",
+                                      "max_capacity_mw":  50.0,
+                                      "available_capacity_mw":  50.0,
+                                      "current_output_mw":  50.0,
+                                      "status":  "AVAILABLE",
+                                      "reason":  "Nominal mechanical readiness; operational range [10 - 50 MW]."
+                                  },
+                                  {
+                                      "resource_id":  "G3",
+                                      "resource_name":  "G3 (Fast-Start Peaker)",
+                                      "resource_type":  "Thermal Generator",
+                                      "max_capacity_mw":  30.0,
+                                      "available_capacity_mw":  30.0,
+                                      "current_output_mw":  0.0,
+                                      "status":  "AVAILABLE",
+                                      "reason":  "Nominal mechanical readiness; operational range [5 - 30 MW]."
+                                  },
+                                  {
+                                      "resource_id":  "BESS-1",
+                                      "resource_name":  "Lithium Iron Phosphate (LFP) Grid BESS",
+                                      "resource_type":  "Battery Storage (BESS)",
+                                      "max_capacity_mw":  50.0,
+                                      "available_capacity_mw":  0.0,
+                                      "current_output_mw":  0.0,
+                                      "status":  "UNAVAILABLE",
+                                      "reason":  "BESS protection tripped or manual isolation active."
+                                  },
+                                  {
+                                      "resource_id":  "GRID-INTERCONNECT",
+                                      "resource_name":  "132 kV Regional Grid Tie-Line",
+                                      "resource_type":  "Grid Interconnection",
+                                      "max_capacity_mw":  60.0,
+                                      "available_capacity_mw":  60.0,
+                                      "current_output_mw":  0.0,
+                                      "status":  "AVAILABLE",
+                                      "reason":  "Transmission line energized. Capacity: +60 MW import / -40 MW export."
+                                  }
+                              ],
+    "battery_state":  {
+                          "id":  "BESS-1",
+                          "name":  "Lithium Iron Phosphate (LFP) Grid BESS",
+                          "capacity_mwh":  200.0,
+                          "current_soc_pct":  20.0,
+                          "min_soc_pct":  20.0,
+                          "max_soc_pct":  90.0,
+                          "max_charge_mw":  50.0,
+                          "max_discharge_mw":  50.0,
+                          "charge_efficiency":  0.92,
+                          "discharge_efficiency":  0.92,
+                          "is_available":  false,
+                          "forced_offline":  true,
+                          "status":  "AVAILABLE",
+                          "degradation_pct":  2.4,
+                          "cycles_completed":  142.17
+                      },
+    "generators":  [
+                       {
+                           "id":  "G1",
+                           "name":  "G1 (Base-load CCGT)",
+                           "min_mw":  20.0,
+                           "max_mw":  80.0,
+                           "ramp_rate_mw":  25.0,
+                           "cost_per_mwh":  35.0,
+                           "emission_factor_t_per_mwh":  0.72,
+                           "is_available":  true,
+                           "forced_offline":  false,
+                           "current_mw":  80.0,
+                           "status":  "AVAILABLE"
+                       },
+                       {
+                           "id":  "G2",
+                           "name":  "G2 (Intermediate Gas)",
+                           "min_mw":  10.0,
+                           "max_mw":  50.0,
+                           "ramp_rate_mw":  35.0,
+                           "cost_per_mwh":  52.0,
+                           "emission_factor_t_per_mwh":  0.58,
+                           "is_available":  true,
+                           "forced_offline":  false,
+                           "current_mw":  24.46,
+                           "status":  "AVAILABLE"
+                       },
+                       {
+                           "id":  "G3",
+                           "name":  "G3 (Fast-Start Peaker)",
+                           "min_mw":  5.0,
+                           "max_mw":  30.0,
+                           "ramp_rate_mw":  30.0,
+                           "cost_per_mwh":  85.0,
+                           "emission_factor_t_per_mwh":  0.45,
+                           "is_available":  true,
+                           "forced_offline":  false,
+                           "current_mw":  0.0,
+                           "status":  "LIMITED"
+                       }
+                   ],
+    "renewables":  [
+                       {
+                           "id":  "SOLAR-1",
+                           "name":  "Solar PV Farm (Bifacial Single-Axis)",
+                           "capacity_mw":  100.0,
+                           "is_available":  true,
+                           "forced_offline":  false,
+                           "current_mw":  0.0,
+                           "status":  "AVAILABLE"
+                       },
+                       {
+                           "id":  "WIND-1",
+                           "name":  "Wind Turbine Array (Direct-Drive DFIG)",
+                           "capacity_mw":  80.0,
+                           "is_available":  true,
+                           "forced_offline":  false,
+                           "current_mw":  25.27,
+                           "status":  "AVAILABLE"
+                       }
+                   ],
+    "grid_interconnect":  {
+                              "id":  "GRID-INTERCONNECT",
+                              "name":  "132 kV Regional Grid Tie-Line",
+                              "max_import_mw":  60.0,
+                              "max_export_mw":  40.0,
+                              "is_available":  true,
+                              "forced_offline":  false,
+                              "cost_import_per_mwh":  75.0,
+                              "revenue_export_per_mwh":  30.0,
+                              "status":  "AVAILABLE"
+                          },
+    "classical_solution":  {
+                               "solver_type":  "Classical Mixed-Integer Simplex / Interior-Point (SciPy HiGHS)",
+                               "g1_committed":  true,
+                               "g1_mw":  80.0,
+                               "g2_committed":  true,
+                               "g2_mw":  24.46,
+                               "g3_committed":  false,
+                               "g3_mw":  0.0,
+                               "solar_mw":  0.0,
+                               "wind_mw":  25.27,
+                               "battery_charge_mw":  0.0,
+                               "battery_discharge_mw":  0.0,
+                               "grid_import_mw":  0.0,
+                               "grid_export_mw":  0.0,
+                               "curtailment_mw":  0.0,
+                               "total_cost_usd":  4141.92,
+                               "co2_emissions_tons":  71.79,
+                               "renewable_utilization_pct":  19.5,
+                               "reserve_margin_mw":  25.5,
+                               "is_feasible":  true,
+                               "violations":  [
+
+                                              ],
+                               "objective_value":  5218.72,
+                               "runtime_ms":  16.29
+                           },
+    "quantum_solution":  {
+                             "backend":  "SIMULATED",
+                             "backend_details":  "Statevector QAOA / QUBO Combinatorial Unit Commitment Simulator (3-qubit subspace)",
+                             "variables_count":  3,
+                             "candidate_bitstrings":  [
+                                                          {
+                                                              "010":  0.3234
+                                                          },
+                                                          {
+                                                              "101":  0.2927
+                                                          },
+                                                          {
+                                                              "100":  0.1895
+                                                          },
+                                                          {
+                                                              "111":  0.0755
+                                                          },
+                                                          {
+                                                              "001":  0.0484
+                                                          },
+                                                          {
+                                                              "110":  0.0336
+                                                          },
+                                                          {
+                                                              "011":  0.03
+                                                          },
+                                                          {
+                                                              "000":  0.0069
+                                                          }
+                                                      ],
+                             "best_bitstring":  "010",
+                             "objective_value":  8020.86,
+                             "runtime_ms":  0.18,
+                             "candidate":  {
+                                               "solver_type":  "Hybrid Quantum QUBO / SQA (Transverse-Field Annealing Simulator)",
+                                               "g1_committed":  false,
+                                               "g1_mw":  0.0,
+                                               "g2_committed":  true,
+                                               "g2_mw":  50.0,
+                                               "g3_committed":  false,
+                                               "g3_mw":  0.0,
+                                               "solar_mw":  0.0,
+                                               "wind_mw":  25.27,
+                                               "battery_charge_mw":  0.0,
+                                               "battery_discharge_mw":  0.0,
+                                               "grid_import_mw":  54.46,
+                                               "grid_export_mw":  0.0,
+                                               "curtailment_mw":  0.0,
+                                               "total_cost_usd":  6714.5,
+                                               "co2_emissions_tons":  50.78,
+                                               "renewable_utilization_pct":  19.5,
+                                               "reserve_margin_mw":  0.0,
+                                               "is_feasible":  false,
+                                               "violations":  [
+                                                                  "Insufficient spinning reserve: available 0.0 MW is below required 25.0 MW."
+                                                              ],
+                                               "objective_value":  8020.86,
+                                               "runtime_ms":  0.18
+                                           },
+                             "disclaimer":  "Quantum Backend: SIMULATED. Classical simulation runtime â?? not evidence of quantum hardware advantage."
+                         },
+    "validation":  {
+                       "is_feasible":  false,
+                       "checks":  [
+                                      {
+                                          "name":  "Power Balance Equality",
+                                          "satisfied":  true,
+                                          "actual_value":  "Injections=129.7 MW, Withdrawals=129.7 MW",
+                                          "limit_value":  "Net Imbalance = 0 MW (tolerance Â±0.1 MW)",
+                                          "deviation":  "0.0 MW"
+                                      },
+                                      {
+                                          "name":  "Generator G1 Availability",
+                                          "satisfied":  true,
+                                          "actual_value":  "Compliant",
+                                          "limit_value":  "Unit Available",
+                                          "deviation":  null
+                                      },
+                                      {
+                                          "name":  "Generator G1 Off-State Output",
+                                          "satisfied":  true,
+                                          "actual_value":  "0.0 MW",
+                                          "limit_value":  "0.0 MW",
+                                          "deviation":  null
+                                      },
+                                      {
+                                          "name":  "Generator G2 Availability",
+                                          "satisfied":  true,
+                                          "actual_value":  "Compliant",
+                                          "limit_value":  "Unit Available",
+                                          "deviation":  null
+                                      },
+                                      {
+                                          "name":  "Generator G2 Capacity Limits",
+                                          "satisfied":  true,
+                                          "actual_value":  "50.0 MW",
+                                          "limit_value":  "[10.0 - 50.0 MW]",
+                                          "deviation":  null
+                                      },
+                                      {
+                                          "name":  "Generator G3 Availability",
+                                          "satisfied":  true,
+                                          "actual_value":  "Compliant",
+                                          "limit_value":  "Unit Available",
+                                          "deviation":  null
+                                      },
+                                      {
+                                          "name":  "Generator G3 Off-State Output",
+                                          "satisfied":  true,
+                                          "actual_value":  "0.0 MW",
+                                          "limit_value":  "0.0 MW",
+                                          "deviation":  null
+                                      },
+                                      {
+                                          "name":  "Battery Complementarity (No Simultaneous Charge/Discharge)",
+                                          "satisfied":  true,
+                                          "actual_value":  "Charge=0.0 MW, Discharge=0.0 MW",
+                                          "limit_value":  "At most one active state",
+                                          "deviation":  null
+                                      },
+                                      {
+                                          "name":  "Battery Availability",
+                                          "satisfied":  true,
+                                          "actual_value":  "Compliant",
+                                          "limit_value":  "Available",
+                                          "deviation":  null
+                                      },
+                                      {
+                                          "name":  "Battery State of Charge (SOC) Bounds",
+                                          "satisfied":  true,
+                                          "actual_value":  "20.0% (Current: 20.0%)",
+                                          "limit_value":  "[20.0% - 90.0%]",
+                                          "deviation":  null
+                                      },
+                                      {
+                                          "name":  "Grid Import / Export Thermal Limits",
+                                          "satisfied":  true,
+                                          "actual_value":  "Import=54.5 MW, Export=0.0 MW",
+                                          "limit_value":  "Import \u003c= 60 MW, Export \u003c= 40 MW",
+                                          "deviation":  null
+                                      },
+                                      {
+                                          "name":  "Renewable Resource Availability Bounds",
+                                          "satisfied":  true,
+                                          "actual_value":  "Solar=0.0 MW, Wind=25.3 MW",
+                                          "limit_value":  "Solar Potential \u003c= 0.0 MW, Wind Potential \u003c= 25.3 MW",
+                                          "deviation":  null
+                                      },
+                                      {
+                                          "name":  "Operating Spinning Reserve Requirement",
+                                          "satisfied":  false,
+                                          "actual_value":  "0.0 MW",
+                                          "limit_value":  "\u003e= 25.0 MW",
+                                          "deviation":  "-25.0 MW"
+                                      }
+                                  ],
+                       "failed_reasons":  [
+                                              "Insufficient spinning reserve: available 0.0 MW is below required 25.0 MW."
+                                          ],
+                       "max_imbalance_mw":  0.0
+                   },
+    "repair":  {
+                   "repair_applied":  true,
+                   "original_violations":  [
+                                               "Insufficient spinning reserve: available 0.0 MW is below required 25.0 MW."
+                                           ],
+                   "actions_taken":  [
+
+                                     ],
+                   "repaired_candidate":  {
+                                              "solver_type":  "Hybrid Quantum Solution (Classically Repaired \u0026 Refined)",
+                                              "g1_committed":  false,
+                                              "g1_mw":  0.0,
+                                              "g2_committed":  true,
+                                              "g2_mw":  50.0,
+                                              "g3_committed":  false,
+                                              "g3_mw":  0.0,
+                                              "solar_mw":  0.0,
+                                              "wind_mw":  25.27,
+                                              "battery_charge_mw":  0.0,
+                                              "battery_discharge_mw":  0.0,
+                                              "grid_import_mw":  54.46,
+                                              "grid_export_mw":  0.0,
+                                              "curtailment_mw":  0.0,
+                                              "total_cost_usd":  6714.5,
+                                              "co2_emissions_tons":  50.78,
+                                              "renewable_utilization_pct":  19.5,
+                                              "reserve_margin_mw":  0.0,
+                                              "is_feasible":  false,
+                                              "violations":  [
+                                                                 "Insufficient spinning reserve: available 0.0 MW is below required 25.0 MW."
+                                                             ],
+                                              "objective_value":  8020.8,
+                                              "runtime_ms":  0.18
+                                          },
+                   "post_repair_feasible":  false
+               },
+    "final_schedule":  {
+                           "solver_type":  "Classical Mixed-Integer Simplex / Interior-Point (SciPy HiGHS)",
+                           "g1_committed":  true,
+                           "g1_mw":  80.0,
+                           "g2_committed":  true,
+                           "g2_mw":  24.46,
+                           "g3_committed":  false,
+                           "g3_mw":  0.0,
+                           "solar_mw":  0.0,
+                           "wind_mw":  25.27,
+                           "battery_charge_mw":  0.0,
+                           "battery_discharge_mw":  0.0,
+                           "grid_import_mw":  0.0,
+                           "grid_export_mw":  0.0,
+                           "curtailment_mw":  0.0,
+                           "total_cost_usd":  4141.92,
+                           "co2_emissions_tons":  71.79,
+                           "renewable_utilization_pct":  19.5,
+                           "reserve_margin_mw":  25.5,
+                           "is_feasible":  true,
+                           "violations":  [
+
+                                          ],
+                           "objective_value":  5218.72,
+                           "runtime_ms":  16.29
+                       },
+    "comparison":  {
+                       "scenario":  "NORMAL",
+                       "timestamp":  "12:44:37",
+                       "classical_objective":  5218.72,
+                       "quantum_objective":  8020.8,
+                       "classical_cost_usd":  4141.92,
+                       "quantum_cost_usd":  6714.5,
+                       "classical_co2_tons":  71.79,
+                       "quantum_co2_tons":  50.78,
+                       "classical_renewable_pct":  19.5,
+                       "quantum_renewable_pct":  19.5,
+                       "classical_runtime_ms":  16.29,
+                       "quantum_runtime_ms":  0.18,
+                       "classical_feasible":  true,
+                       "quantum_feasible_before_repair":  false,
+                       "quantum_feasible_after_repair":  false,
+                       "objective_delta_pct":  53.69,
+                       "analysis_notes":  "Classical solver achieved slightly superior objective (5218.7 vs 8020.8) due to exact continuous LP relaxation. Quantum candidate required classical repair for 1 constraints before reaching feasibility.",
+                       "disclaimer":  "Simulation runtime comparison â?? not evidence of quantum hardware advantage."
+                   },
+    "explanation":  {
+                        "summary":  "Schedule dispatches 25.3 MW renewable, 104.5 MW thermal, and net +0.0 MW grid transfer to meet 129.7 MW demand at $4141.92 total cost and 71.79 tCO2.",
+                        "key_drivers":  [
+                                            "Contingency: BESS Battery Storage is UNAVAILABLE / FORCED OFFLINE. Baseload thermal generation and grid imports dynamically scaled to guarantee spinning reserve adequacy.",
+                                            "Low renewable availability (19.5% of load): Subdued solar (0.0 MW) and wind (25.3 MW) required base/intermediate thermal commitment.",
+                                            "Operational Transition: Total operating cost shifted by -2572.58 USD compared to previous schedule (Reserve margin: 25.5 MW vs previous 0.0 MW)."
+                                        ],
+                        "battery_decision_rationale":  "BESS Storage is UNAVAILABLE / FORCED OFFLINE: Active power exchange is locked at 0.0 MW. The optimizer re-routed all rapid response and reserve margins to online thermal generators and interconnection.",
+                        "generator_dispatch_rationale":  "Committed 2 units: G1 (80.0 MW @ $35/MWh), G2 (24.5 MW @ $52/MWh). The optimizer prioritized lower-cost base-load G1 before bringing intermediate G2 online, keeping expensive peaker G3 idle unless required for peak deficit or reserve requirements.",
+                        "grid_tradeoff_rationale":  "Zero grid exchange: Microgrid operating in self-sufficient islanded energy balance.",
+                        "curtailment_rationale":  "Zero renewable curtailment: 100% of available green generation utilized or stored."
+                    },
+    "active_pipeline_stage":  "FINAL SCHEDULE DISPATCHED",
+    "previous_schedule":  {
+                              "solver_type":  "Hybrid Quantum QUBO / SQA (Transverse-Field Annealing Simulator)",
+                              "g1_committed":  false,
+                              "g1_mw":  0.0,
+                              "g2_committed":  true,
+                              "g2_mw":  50.0,
+                              "g3_committed":  false,
+                              "g3_mw":  0.0,
+                              "solar_mw":  0.0,
+                              "wind_mw":  25.27,
+                              "battery_charge_mw":  0.0,
+                              "battery_discharge_mw":  0.0,
+                              "grid_import_mw":  54.46,
+                              "grid_export_mw":  0.0,
+                              "curtailment_mw":  0.0,
+                              "total_cost_usd":  6714.5,
+                              "co2_emissions_tons":  50.78,
+                              "renewable_utilization_pct":  19.5,
+                              "reserve_margin_mw":  0.0,
+                              "is_feasible":  true,
+                              "violations":  [
+
+                                             ],
+                              "objective_value":  8020.86,
+                              "runtime_ms":  0.16
+                          },
+    "optimization_status_message":  "Optimization completed â?? feasible schedule found."
+}
